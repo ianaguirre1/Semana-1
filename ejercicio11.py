@@ -1,6 +1,7 @@
 # numero1_int = input("digita un numero")
 # numero2_int = input("digita un numero")
 # numero3_int = input("digita un numero")
+<<<<<<< HEAD
 while (True):
 
     try:
@@ -30,5 +31,46 @@ while (True):
 
     except ValueError:
             print("Ingresa un número entero valido")
+=======
+# Validar el primer número
+while True:
+    try:
+        numero1_int = input("Digita el primer número: ")
+        numero1 = int(numero1_int)
+        print(f"Número elegido: {numero1}")
+        break  # Sale del while solo si todo va bien
+    except ValueError:
+        print("Ingresa un número entero válido")
+
+# Validar el segundo número
+while True:
+    try:
+        numero2_int = input("Digita el segundo número: ")
+        numero2 = int(numero2_int)
+        print(f"Número elegido: {numero2}")
+        break
+    except ValueError:
+        print("Ingresa un número entero válido")
+
+# Validar el tercer número
+while True:
+    try:
+        numero3_int = input("Digita el tercer número: ")
+        numero3 = int(numero3_int)
+        print(f"Número elegido: {numero3}")
+        break
+    except ValueError:
+        print("Ingresa un número entero válido")
+
+    # Comparar los números
+    if numero1 > numero2 and numero1 > numero3:
+        print("El primer número es el mayor")
+    elif numero2 > numero1 and numero2 > numero3:
+        print("El segundo número es el mayor")
+    else:
+        print("El tercer número es el mayor")
+
+
+>>>>>>> c993df9 (se)
 
    
